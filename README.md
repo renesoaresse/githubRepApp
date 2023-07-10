@@ -26,3 +26,15 @@ O aplicativo possui as seguintes funcionalidades:
 ## Testes
 
 Os testes de unidade foram escritos utilizando o Jest. Os componentes e as funcionalidades principais da aplicação foram cobertos por estes testes, garantindo assim o correto funcionamento da aplicação.
+
+## Imagens
+
+<p float="left">
+  <img src="https://github.com/renesoaresse/githubRepApp/assets/16529958/d54eec06-eb04-4e3f-a6c8-4e485b7ae956" width="300" alt="Tela Inicial sem Dados" />
+  <img src="https://github.com/renesoaresse/githubRepApp/assets/16529958/368ae6a9-076a-441a-ab14-5f630ec63b13" width="300" alt="Tela Inicial com Dados" />
+  <img src="https://github.com/renesoaresse/githubRepApp/assets/16529958/39140335-75d3-4328-89ae-c91c73214a0e" width="300" alt="Tela de Detalhe" />
+</p>
+
+
+
+
