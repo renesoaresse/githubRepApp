@@ -16,13 +16,19 @@ const Routers = () => (
       screenOptions={{
         headerStyle: {
           backgroundColor: '#fff',
+          paddingHorizontal: 16,
         },
         headerTintColor: '#000',
         headerTitleStyle: {
-          fontWeight: 'bold',
+          fontWeight: '700',
+          fontSize: 34,
         },
       }}>
-      <Stack.Screen name="Init" component={Init} />
+      <Stack.Screen
+        name="Init"
+        component={Init}
+        options={{title: 'Repositórios'}}
+      />
       <Stack.Screen
         name="Details"
         component={Details}

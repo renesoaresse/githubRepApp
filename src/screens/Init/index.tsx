@@ -25,44 +25,114 @@ export const Init = ({navigation}: Props) => {
   const repositories = useSelector(
     (state: RootState) => state.repository.repositories,
   );
-  console.log('🚀 ~ file: index.tsx:28 ~ Init ~ repositories:', repositories);
 
   const searchRepos = async () => {
-    const {data} = await api.get(`/search/repositories?q=${text}&per_page=1`);
+    if (!text) {
+      dispatch(setRepositories([]));
+      return;
+    }
+    const {data} = await api.get(`/search/repositories?q=${text}&per_page=30`);
     dispatch(setRepositories(data.items));
   };
 
   return (
-    <View style={{alignContent: 'center', justifyContent: 'center'}}>
+    <View
+      style={{
+        backgroundColor: 'white',
+        paddingHorizontal: 16,
+        paddingTop: 16,
+        flex: 1,
+      }}>
       <TextInput
         value={text}
         onChangeText={setText}
         onBlur={searchRepos}
         onSubmitEditing={searchRepos}
-        style={{borderWidth: 1}}
+        placeholder="Busca por repositórios"
+        style={{
+          backgroundColor: '#7676801F',
+          borderRadius: 8,
+          paddingHorizontal: 8,
+          paddingVertical: 7,
+          height: 36,
+        }}
       />
       <FlatList
         data={repositories}
+        style={{marginTop: 25}}
         renderItem={({item}) => (
-          <View>
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate('Details', {
-                  html_url: item.owner.html_url,
-                  title: item.name,
-                })
-              }>
+          <TouchableOpacity
+            testID="buttom-navigation-repo"
+            style={{marginBottom: 17}}
+            onPress={() =>
+              navigation.navigate('Details', {
+                html_url: item.owner.html_url,
+                title: item.name,
+              })
+            }>
+            <View
+              style={{
+                alignContent: 'space-between',
+                flexDirection: 'row',
+              }}>
               <Image
                 source={{uri: item.owner.avatar_url}}
-                style={{width: 52, height: 52, borderRadius: 25}}
+                style={{
+                  width: 52,
+                  height: 52,
+                  borderRadius: 25,
+                  backgroundColor: '#D9D9D9',
+                }}
               />
-              <Text>{item.name}</Text>
-              <Text>{item.owner.login}</Text>
-              <Text>{item.stargazers_count}</Text>
-            </TouchableOpacity>
-          </View>
+              <View
+                style={{
+                  marginLeft: 10,
+                  flexDirection: 'row',
+                  flex: 1,
+                  justifyContent: 'space-between',
+                  alignContent: 'center',
+                  borderBottomWidth: 1,
+                  borderBottomColor: '#EBEBEB',
+                }}>
+                <View>
+                  <Text
+                    style={{
+                      fontWeight: '600',
+                      color: 'black',
+                      textTransform: 'capitalize',
+                      marginBottom: 2,
+                    }}>
+                    {item.name}
+                  </Text>
+                  <Text
+                    style={{
+                      fontWeight: '400',
+                      color: '#48484A',
+                      textTransform: 'capitalize',
+                    }}>
+                    {item.owner.login}
+                  </Text>
+                </View>
+                <Text style={{fontWeight: '400', color: '#48484A'}}>
+                  {item.stargazers_count} stars
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
         )}
         keyExtractor={item => String(item.id)}
+        ListEmptyComponent={() => (
+          <View testID="none-repo">
+            <Text
+              style={{
+                fontWeight: '600',
+                color: 'black',
+                fontSize: 32,
+              }}>
+              Nenhum repositórios encontrado
+            </Text>
+          </View>
+        )}
       />
     </View>
   );
