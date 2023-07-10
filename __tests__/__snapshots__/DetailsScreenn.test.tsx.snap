@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details renders WebView with correct source 1`] = `
+<View
+  source={
+    {
+      "uri": "https://github.com",
+    }
+  }
+  testID="mockWebView"
+/>
+`;

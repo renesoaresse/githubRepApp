@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InitScreen renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "white",
+      "flex": 1,
+      "paddingHorizontal": 16,
+      "paddingTop": 16,
+    }
+  }
+>
+  <TextInput
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Busca por repositórios"
+    style={
+      {
+        "backgroundColor": "#7676801F",
+        "borderRadius": 8,
+        "height": 36,
+        "paddingHorizontal": 8,
+        "paddingVertical": 7,
+      }
+    }
+    value=""
+  />
+  <RCTScrollView
+    ListEmptyComponent={[Function]}
+    data={
+      [
+        {
+          "id": 1,
+          "name": "Repo 1",
+          "owner": {
+            "avatar_url": "https://dummyimage.com/300/09f/fff.png",
+            "html_url": "https://dummyimage.com/300/09f/fff.png",
+            "login": "User 1",
+          },
+          "stargazers_count": 100,
+        },
+        {
+          "id": 2,
+          "name": "Repo 2",
+          "owner": {
+            "avatar_url": "https://dummyimage.com/500/09f/fff.png",
+            "html_url": "https://dummyimage.com/500/09f/fff.png",
+            "login": "User 2",
+          },
+          "stargazers_count": 200,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    style={
+      {
+        "marginTop": 25,
+      }
+    }
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "marginBottom": 17,
+              "opacity": 1,
+            }
+          }
+          testID="buttom-navigation-repo"
+        >
+          <View
+            style={
+              {
+                "alignContent": "space-between",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "uri": "https://dummyimage.com/300/09f/fff.png",
+                }
+              }
+              style={
+                {
+                  "backgroundColor": "#D9D9D9",
+                  "borderRadius": 25,
+                  "height": 52,
+                  "width": 52,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "alignContent": "center",
+                  "borderBottomColor": "#EBEBEB",
+                  "borderBottomWidth": 1,
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginLeft": 10,
+                }
+              }
+            >
+              <View>
+                <Text
+                  style={
+                    {
+                      "color": "black",
+                      "fontWeight": "600",
+                      "marginBottom": 2,
+                      "textTransform": "capitalize",
+                    }
+                  }
+                >
+                  Repo 1
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "#48484A",
+                      "fontWeight": "400",
+                      "textTransform": "capitalize",
+                    }
+                  }
+                >
+                  User 1
+                </Text>
+              </View>
+              <Text
+                style={
+                  {
+                    "color": "#48484A",
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                100
+                 stars
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "marginBottom": 17,
+              "opacity": 1,
+            }
+          }
+          testID="buttom-navigation-repo"
+        >
+          <View
+            style={
+              {
+                "alignContent": "space-between",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "uri": "https://dummyimage.com/500/09f/fff.png",
+                }
+              }
+              style={
+                {
+                  "backgroundColor": "#D9D9D9",
+                  "borderRadius": 25,
+                  "height": 52,
+                  "width": 52,
+                }
+              }
+            />
+            <View
+              style={
+                {
+                  "alignContent": "center",
+                  "borderBottomColor": "#EBEBEB",
+                  "borderBottomWidth": 1,
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginLeft": 10,
+                }
+              }
+            >
+              <View>
+                <Text
+                  style={
+                    {
+                      "color": "black",
+                      "fontWeight": "600",
+                      "marginBottom": 2,
+                      "textTransform": "capitalize",
+                    }
+                  }
+                >
+                  Repo 2
+                </Text>
+                <Text
+                  style={
+                    {
+                      "color": "#48484A",
+                      "fontWeight": "400",
+                      "textTransform": "capitalize",
+                    }
+                  }
+                >
+                  User 2
+                </Text>
+              </View>
+              <Text
+                style={
+                  {
+                    "color": "#48484A",
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                200
+                 stars
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
