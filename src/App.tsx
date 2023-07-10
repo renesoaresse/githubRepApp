@@ -6,7 +6,7 @@ import {store} from './store/store';
 
 const App = () => (
   <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
-    <StatusBar barStyle={'light-content'} />
+    <StatusBar barStyle={'dark-content'} backgroundColor="white" />
     <Provider store={store}>
       <Routers />
     </Provider>

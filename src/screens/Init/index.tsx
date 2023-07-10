@@ -47,8 +47,9 @@ export const Init = ({navigation}: Props) => {
           <View>
             <TouchableOpacity
               onPress={() =>
-                navigation.navigate('DetailsScreen', {
+                navigation.navigate('Details', {
                   html_url: item.owner.html_url,
+                  title: item.name,
                 })
               }>
               <Image
