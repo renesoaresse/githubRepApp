@@ -1,79 +1,28 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# githubRepApp
 
-# Getting Started
+Este projeto, chamado "githubRepApp", é uma aplicação desenvolvida como um estudo pessoal, visando aprofundar conhecimentos e habilidades em React Native, TypeScript e testes unitários. Ele é um aplicativo para buscar e visualizar repositórios do GitHub.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Tecnologias Utilizadas
 
-## Step 1: Start the Metro Server
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [React Native](https://reactnative.dev/): Uma estrutura de JavaScript para construir aplicativos móveis nativos.
+- [TypeScript](https://www.typescriptlang.org/): Uma extensão de JavaScript que adiciona tipos estáticos fortes.
+- [Redux Toolkit](https://redux-toolkit.js.org/): A abordagem oficial e recomendada para escrever código Redux.
+- [React Navigation](https://reactnavigation.org/): Uma solução para a navegação em aplicativos React Native.
+- [Jest](https://jestjs.io/): Um framework de teste de JavaScript com foco na simplicidade.
+- [react-native-webview](https://github.com/react-native-webview/react-native-webview): Um componente do React Native para renderizar web content.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Recursos
 
-```bash
-# using npm
-npm start
+O aplicativo possui as seguintes funcionalidades:
 
-# OR using Yarn
-yarn start
-```
+1. **Busca de Repositórios**: Os usuários podem pesquisar por repositórios GitHub utilizando a barra de pesquisa. A pesquisa é ativada quando o usuário pressiona o botão de enviar no teclado digital ou quando o campo de busca perde o foco.
 
-## Step 2: Start your Application
+2. **Visualização de Repositórios**: Os repositórios encontrados são exibidos em uma lista. Cada item da lista inclui o avatar do criador do repositório, o nome do repositório, o nome de usuário do criador e o número de estrelas que o repositório recebeu.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+3. **Detalhes do Repositório**: Ao clicar em um repositório, o aplicativo navega para uma segunda tela que exibe a página do repositório GitHub em um WebView.
 
-### For Android
+## Testes
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Os testes de unidade foram escritos utilizando o Jest. Os componentes e as funcionalidades principais da aplicação foram cobertos por estes testes, garantindo assim o correto funcionamento da aplicação.
